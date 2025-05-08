@@ -1,0 +1,28 @@
+<button mat-button [matMenuTriggerFor]="aboveMenu">Inicio</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Equipos</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Huracan</button>
+    <button mat-menu-item>Aguila</button>
+    <button mat-menu-item>Cautin</button>
+    <button mat-menu-item>Andino</button>
+    <button mat-menu-item>Centro Cultural</button>
+    <button mat-menu-item>Santa Guadalupe</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Series</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Juveniles</button>
+  <button mat-menu-item>Primera Division</button>
+  <button mat-menu-item>Segunda Division</button>
+  <button mat-menu-item>Seniors</button>
+  <button mat-menu-item>Super Seniors</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="afterMenu">Tabla de Posiciones</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
